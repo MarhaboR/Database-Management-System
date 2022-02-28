@@ -2,7 +2,7 @@
 CREATE TABLE Treats (
   PersNr integer,
   PatientNr integer,
-  Primary key (PersNr, PatientNr)
+  Primary key (PersNr, PatientNr),
   foreign key (PersNr)
   references Doctor,
   foreign key (PatientNr)
